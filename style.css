@@ -1,5 +1,5 @@
 body {
-    background-color: black;
+    background-color: rgb(255, 255, 255);
     font-family: 'Montserrat', sans-serif;
     font-size: 20px;
 }
@@ -8,51 +8,6 @@ body {
     width: 900px;
     height: 100vh;
     margin: 0 auto;
-}
-
-.card-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.card-date {
-    display: flex;
-    justify-content: space-around;
-    width: 411px;
-    height: 71px;
-    background: #FFF2AC;
-    border-radius: 25px;
-    margin-bottom: 14px;
-}
-
-.card-date__date {
-    background-color: unset;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #D7CC90;
-    font-weight: 700;
-}
-
-.card-date__split {
-    background-color: unset;
-    border: 0;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    color: #D7CC90;
-    font-weight: 700;
-}
-
-.card-inner {
-    background-color: #FFCAAC;
-    width: 411px;
-    height: 528px;
-    box-sizing: border-box;
-    border-radius: 25px;
-    padding: 20px 15px;
-
 }
 
 .button {
@@ -68,22 +23,3 @@ body {
     text-transform: uppercase;
 }
 
-.card-inner_input-ex {
-    width: 100%;
-    height: 86px;
-    box-sizing: border-box;
-    background: #EBB191;
-    border-radius: 15px;
-    border: 0;
-    padding: 25px;
-    color: #594848;
-}
-
-.card-inner_input-ex::placeholder {
-    position: relative;
-    top: 3px;
-    color: #594848;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 20px;
-    font-weight: 200;
-}

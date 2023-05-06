@@ -1,0 +1,68 @@
+.slider-container {
+    display: flex;
+    min-width: 0;
+    min-height: 0;
+    width: 100%;
+    justify-content: space-around;
+
+    position: relative;
+
+    -webkit-user-select: none; /* для Safari */
+    -moz-user-select: none; /* для Firefox */
+    -ms-user-select: none; /* для Internet Explorer/Edge */
+    user-select: none; /* стандартный стиль */
+}
+
+.slider-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        180deg,
+        #ffcaac 0%,
+        rgba(255, 202, 172, 0) 46.44%
+    );
+    z-index: 10;
+}
+.slider-container::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+
+    pointer-events: none;
+
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        0deg,
+        #ffcaac 0%,
+        rgba(255, 202, 172, 0) 46.44%
+    );
+    z-index: 10;
+}
+
+.swiper-slide {
+    width: 90px;
+    height: 50px;
+    font-weight: 100;
+    font-size: 70px;
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.slider-settings {
+    height: 300px;
+    width: 90px;
+    overflow: hidden;
+}

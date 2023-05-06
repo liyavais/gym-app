@@ -1,33 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" />
+        <link rel="stylesheet" href="slider.css" />
+        <link rel="stylesheet" href="cards.css">
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-</head>
+    <body>
+        <div class="container">
+            <div class="card-container">
+                <form action="">
+                    <div class="card-date">
+                        <input type="date" class="card-date__date" />
+                        <select class="card-date__split">
+                            <option>Верх</option>
+                            <option>Низ</option>
+                        </select>
+                    </div>
+                    <div class="card-inner">
+                        <input
+                            type="text"
+                            class="card-inner_input-ex"
+                            placeholder="Введите упражнение"
+                        />
 
-<body>
-    <div class="container">
-        <div class="card-container">
-            <form action="">
-                <div class="card-date">
-                    <input type="date" class="card-date__date">
-                    <select class="card-date__split">
-                        <option>Верх</option>
-                        <option>Низ</option>
-                    </select>
-                </div>
-                <div class="card-inner">
-                    <input type="text" class="card-inner_input-ex" placeholder="Введите упражнение">
-                </div>
-                <input type="submit" class="button" value="Добавить">
+                        <div class="slider-container">
+                            <div class="slider slider-settings">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide">8</div>
+                                    <div class="swiper-slide">10</div>
+                                    <div class="swiper-slide">12</div>
+                                    <div class="swiper-slide">15</div>
+                                    <div class="swiper-slide">20</div>
+                                    <div class="swiper-slide"></div>
+                                </div>
+                            </div>
+
+                            <div class="slider-second slider-settings">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"></div>
+                                    <div class="swiper-slide">3</div>
+                                    <div class="swiper-slide">4</div>
+                                    <div class="swiper-slide">5</div>
+                                    <div class="swiper-slide">6</div>
+                                    <div class="swiper-slide"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <input type="submit" class="button" value="Добавить" />
+                </form>
+            </div>
         </div>
-        </form>
-    </div>
-    </div>
-</body>
 
+        <script
+            src="https://code.jquery.com/jquery-3.6.4.js"
+            integrity="sha256-a9jBBRygX1Bh5lt8GZjXDzyOB+bWve9EiO7tROUtj/E="
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+        <script
+            type="text/javascript"
+            src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+        ></script>
+
+        <script src="app.js"></script>
+    </body>
 </html>
